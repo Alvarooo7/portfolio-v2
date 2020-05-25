@@ -6,7 +6,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 
 import Drawer from "./drawer"
 
-import LogoImage from "../images/logo_transparent_background.png"
+import LogoImage from "../images/black_logo.png"
 
 const Container = styled.div`
   align-items: center;
@@ -15,6 +15,7 @@ const Container = styled.div`
   height: 5rem;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 1rem;
   margin-bottom: 1.45rem;
   max-width: 60rem;
   padding: 1.45rem 1.0875rem;
@@ -38,19 +39,19 @@ const MenuItem = styled.li`
   margin: 0;
   text-decoration: none;
   &:hover {
+    color: #0bd8a2;
     cursor: pointer;
-    font-weight: 600;
   }
 `
 
 const MenuItemButton = styled.button`
   background: transparent;
-  border: solid 2px #1159f6;
+  border: solid 2px #0bd8a2;
   border-radius: 0.25rem;
-  color: #1159f6;
+  color: #0bd8a2;
   padding: 0.5rem;
   &:hover {
-    background: #1159f6;
+    background: #0bd8a2;
     color: white;
     cursor: pointer;
   }
@@ -80,7 +81,7 @@ const Header = () => {
           textDecoration: `none`,
         }}
       >
-        <img style={{ margin: 0, zIndex: 3 }} src={LogoImage} width="150px" />
+        <img style={{ margin: 0, zIndex: 3 }} src={LogoImage} width="175px" />
       </Link>
       <Menu>
         <Link

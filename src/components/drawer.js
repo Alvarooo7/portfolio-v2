@@ -28,19 +28,19 @@ const ResponsiveItem = styled.li`
   text-align: center;
   width: 100vw;
   &:hover {
+    color: #0bd8a2;
     cursor: pointer;
-    font-weight: 600;
   }
 `
 
 const MenuItemButton = styled.button`
   background: transparent;
-  border: solid 2px #1159f6;
+  border: solid 2px #0bd8a2;
   border-radius: 0.25rem;
-  color: #1159f6;
+  color: #0bd8a2;
   padding: 0.5rem;
   &:hover {
-    background: #1159f6;
+    background: #0bd8a2;
     color: white;
     cursor: pointer;
   }
