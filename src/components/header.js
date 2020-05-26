@@ -16,10 +16,14 @@ const Container = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 1.45rem;
-  max-width: 60rem;
-  padding: 1.45rem 1.0875rem;
-  padding-top: 2rem;
+  max-width: 80rem;
+  padding: 0 0.5rem;
+  padding-top: 3rem;
   width: 100%;
+  zindex: 3;
+  @media (min-width: 1024px) {
+    padding-top: 2.5rem;
+  }
 `
 
 const Menu = styled.ul`
@@ -27,7 +31,7 @@ const Menu = styled.ul`
   list-style: none;
   margin: 0;
   width: 16rem;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -35,6 +39,7 @@ const Menu = styled.ul`
 `
 
 const MenuItem = styled.li`
+  color: #00343d;
   font-size: 0.875rem;
   margin: 0;
   text-decoration: none;
@@ -50,12 +55,11 @@ const MenuItemButton = styled.button`
   border-radius: 0.25rem;
   color: #0bd8a2;
   padding: 0.5rem;
-  transition: padding 0.3s;
+  transition: background 0.3s;
   &:hover {
     background: #0bd8a2;
     color: white;
     cursor: pointer;
-    padding: 0.5rem 1rem;
   }
 `
 
@@ -64,8 +68,9 @@ const ResponsiveButton = styled.button`
   border: none;
   cursor: pointer;
   display: block;
+  font-size: 1.5rem;
   z-index: 3;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 `
@@ -81,11 +86,13 @@ const Header = () => {
         style={{
           color: `#141c3a`,
           textDecoration: `none`,
+          zIndex: 3,
         }}
       >
         <img
-          style={{ margin: 0, zIndex: 3 }}
+          style={{ margin: 0 }}
           src={LogoImage}
+          alt="DS Logo"
           width="150px"
           loading="lazy"
         />

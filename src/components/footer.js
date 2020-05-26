@@ -9,7 +9,7 @@ import LogoImage from "../images/white_logo.png"
 
 const Container = styled.div`
   background: #00343d;
-  padding: 4rem 0 1rem;
+  padding: 4rem 0;
 `
 
 const Card = styled.div`
@@ -24,8 +24,8 @@ const Card = styled.div`
   margin-top: -9rem;
   padding: 3.5rem 1.25rem;
   max-width: 60rem;
-  width: 95%;
-  @media (min-width: 768px) {
+  width: 90%;
+  @media (min-width: 1024px) {
     flex-direction: row;
   }
 `
@@ -35,8 +35,7 @@ const CardTitle = styled.h2`
   font-weight: 800;
   margin: 0;
   margin-bottom: 1rem;
-  margin-top: 1rem;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     margin: 0;
   }
 `
@@ -46,10 +45,8 @@ const CardText = styled.p`
   font-size: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  padding: 0 1rem;
   text-align: center;
-  width: 300px;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     margin: 0;
     width: 400px;
   }
@@ -63,13 +60,12 @@ const CardButton = styled.button`
   margin-bottom: 1rem;
   margin-top: 1rem;
   padding: 0.5rem;
-  transition: width 0.3s;
+  transition: background 0.3s;
   width: 190px;
   &:hover {
     background: #0bd8a2;
     color: white;
     cursor: pointer;
-    width: 200px;
   }
   @media (min-width: 768px) {
     margin: 0;
@@ -92,6 +88,7 @@ const ListItem = styled.li`
   color: white;
   height: 48px;
   position: relative;
+  transition: background-color 0.1s;
   width: 48px;
   &:hover {
     background-color: white;
@@ -121,12 +118,13 @@ const Typography = styled.p`
 
 const TitleText = styled(Typography)`
   font-size: 1.25rem;
-  margin: 2rem auto;
+  margin: 1rem auto 3rem;
   width: 20rem;
 `
 
 const AdditionalText = styled(Typography)`
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  padding-top: 1rem;
 `
 
 const CopyrightText = styled(Typography)`
@@ -136,6 +134,7 @@ const CopyrightText = styled(Typography)`
 const Copyright = styled.div`
   align-items: center;
   display: flex;
+  font-weight: 600;
   justify-content: center;
 `
 
@@ -167,11 +166,16 @@ const Footer = ({ location }) => {
         <img
           src={LogoImage}
           style={{ margin: 0, maxWidth: 250, height: 100 }}
+          alt="DS Logo"
         />
       </div>
       <TitleText>Living, learning & leveling up one day at a time.</TitleText>
       <List>
-        <a href="https://www.github.com/dsantiagomj/" target="_blank">
+        <a
+          href="https://www.github.com/dsantiagomj/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <ListItem>
             <Icon>
               <AiFillGithub />
@@ -179,14 +183,18 @@ const Footer = ({ location }) => {
           </ListItem>
         </a>
 
-        <a href="https://www.linkedin.com/in/dsantiagomj/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/dsantiagomj/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <ListItem>
             <Icon>
               <AiOutlineLinkedin />
             </Icon>
           </ListItem>
         </a>
-        <a href="mailto:dsantiagomj@icloud.com">
+        <a href="mailto:dsantiagomj@icloud.com" rel="noreferrer">
           <ListItem>
             <Icon>
               <AiOutlineMail />

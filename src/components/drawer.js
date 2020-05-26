@@ -19,7 +19,7 @@ const ResponsiveMenu = styled.ul`
   transition: margin 0.5s;
   width: 100vw;
   z-index: 2;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 `
@@ -48,13 +48,6 @@ const MenuItemButton = styled.button`
   }
 `
 
-const Divider = styled.div`
-  background: #eee;
-  height: 1px;
-  margin: 0 auto;
-  width: 90vw;
-`
-
 const Drawer = ({ isOpen }) => (
   <ResponsiveMenu isOpen={isOpen}>
     <Link
@@ -66,7 +59,6 @@ const Drawer = ({ isOpen }) => (
     >
       <ResponsiveItem>About</ResponsiveItem>
     </Link>
-    <Divider />
     <Link
       to="/contact"
       style={{
