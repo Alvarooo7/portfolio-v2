@@ -15,10 +15,10 @@ const Container = styled.div`
   height: 5rem;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 1rem;
   margin-bottom: 1.45rem;
   max-width: 60rem;
   padding: 1.45rem 1.0875rem;
+  padding-top: 2rem;
   width: 100%;
 `
 
@@ -50,10 +50,12 @@ const MenuItemButton = styled.button`
   border-radius: 0.25rem;
   color: #0bd8a2;
   padding: 0.5rem;
+  transition: padding 0.3s;
   &:hover {
     background: #0bd8a2;
     color: white;
     cursor: pointer;
+    padding: 0.5rem 1rem;
   }
 `
 
@@ -77,17 +79,22 @@ const Header = () => {
       <Link
         to="/"
         style={{
-          color: `black`,
+          color: `#141c3a`,
           textDecoration: `none`,
         }}
       >
-        <img style={{ margin: 0, zIndex: 3 }} src={LogoImage} width="175px" />
+        <img
+          style={{ margin: 0, zIndex: 3 }}
+          src={LogoImage}
+          width="150px"
+          loading="lazy"
+        />
       </Link>
       <Menu>
         <Link
           to="/about"
           style={{
-            color: `black`,
+            color: `#141c3a`,
             textDecoration: `none`,
           }}
         >
@@ -96,12 +103,12 @@ const Header = () => {
         <Link
           to="/contact"
           style={{
-            color: `black`,
+            color: `#141c3a`,
             textDecoration: `none`,
           }}
         >
           <MenuItem>
-            <MenuItemButton>Get in Contact</MenuItemButton>
+            <MenuItemButton>Get in Touch</MenuItemButton>
           </MenuItem>
         </Link>
       </Menu>

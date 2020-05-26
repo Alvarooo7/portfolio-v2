@@ -39,10 +39,12 @@ const MenuItemButton = styled.button`
   border-radius: 0.25rem;
   color: #0bd8a2;
   padding: 0.5rem;
+  transition: padding 0.3s;
   &:hover {
     background: #0bd8a2;
     color: white;
     cursor: pointer;
+    padding: 0.5rem 1rem;
   }
 `
 
@@ -58,7 +60,7 @@ const Drawer = ({ isOpen }) => (
     <Link
       to="/about"
       style={{
-        color: `black`,
+        color: `#141c3a`,
         textDecoration: `none`,
       }}
     >
@@ -68,12 +70,12 @@ const Drawer = ({ isOpen }) => (
     <Link
       to="/contact"
       style={{
-        color: `black`,
+        color: `#141c3a`,
         textDecoration: `none`,
       }}
     >
       <ResponsiveItem>
-        <MenuItemButton>Contact</MenuItemButton>
+        <MenuItemButton>Get in touch</MenuItemButton>
       </ResponsiveItem>
     </Link>
   </ResponsiveMenu>
