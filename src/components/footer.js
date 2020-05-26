@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-import Img from "gatsby-image"
 
 import styled from "styled-components"
 import { AiOutlineMail, AiOutlineLinkedin, AiFillGithub } from "react-icons/ai"
@@ -47,6 +46,7 @@ const CardText = styled.p`
   font-size: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  padding: 0 1rem;
   text-align: center;
   width: 300px;
   @media (min-width: 768px) {
@@ -63,11 +63,13 @@ const CardButton = styled.button`
   margin-bottom: 1rem;
   margin-top: 1rem;
   padding: 0.5rem;
+  transition: width 0.3s;
   width: 190px;
   &:hover {
     background: #0bd8a2;
     color: white;
     cursor: pointer;
+    width: 200px;
   }
   @media (min-width: 768px) {
     margin: 0;
@@ -137,22 +139,23 @@ const Copyright = styled.div`
   justify-content: center;
 `
 
-const Footer = () => {
+const Footer = ({ location }) => {
   const date = new Date()
   const currentYear = date.getFullYear()
 
   return (
     <Container>
-      <Card>
-        <CardTitle>Start a project</CardTitle>
-        <CardText>
-          Interested in working together? We should queue up a chat and meet
-          each other up.
-        </CardText>
-        <Link to="/contact">
-          <CardButton>Let's Talk</CardButton>
-        </Link>
-      </Card>
+      {location !== "/contact" && (
+        <Card>
+          <CardTitle>Start a project</CardTitle>
+          <CardText>
+            Interested in working together? Let's schedule a call.
+          </CardText>
+          <Link to="/contact">
+            <CardButton>Let's Talk</CardButton>
+          </Link>
+        </Card>
+      )}
       <div
         style={{
           display: "flex",
