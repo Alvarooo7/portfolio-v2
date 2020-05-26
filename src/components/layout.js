@@ -23,7 +23,7 @@ const Container = styled.div`
   width: 100vw;
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -39,14 +39,11 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          marginBottom: 100,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer location={location} />
     </Container>
   )
 }
