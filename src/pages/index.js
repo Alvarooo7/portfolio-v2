@@ -64,7 +64,7 @@ const Button = styled.button`
   color: #0bd8a2;
   margin: 0 auto;
   padding: 0.5rem;
-  transition: padding 0.3s;
+  transition: padding 0.3s ease-in-out;
   &:hover {
     background: #0bd8a2;
     color: white;
@@ -188,7 +188,7 @@ const Avatar = styled.div`
   height: 280px;
   margin: 0 auto;
   margin-top: 2rem;
-  transition: background-image 0.2s;
+  transition: background-image 0.2s ease-in-out;
   width: 260px;
   &:hover {
     background-image url(${hoverAvatar});

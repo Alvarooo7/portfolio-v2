@@ -16,7 +16,7 @@ const ResponsiveMenu = styled.ul`
   margin: ${props => (props.isOpen ? "0 auto" : "-2500px")};
   position: absolute;
   top: 5rem;
-  transition: margin 0.5s;
+  transition: margin 0.5s ease-in-out;
   width: 100vw;
   z-index: 2;
   @media (min-width: 1024px) {
@@ -39,7 +39,7 @@ const MenuItemButton = styled.button`
   border-radius: 0.25rem;
   color: #0bd8a2;
   padding: 0.5rem;
-  transition: padding 0.3s;
+  transition: padding 0.3s ease-in-out;
   &:hover {
     background: #0bd8a2;
     color: white;

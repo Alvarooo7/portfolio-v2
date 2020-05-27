@@ -60,7 +60,7 @@ const CardButton = styled.button`
   margin-bottom: 1rem;
   margin-top: 1rem;
   padding: 0.5rem;
-  transition: background 0.3s;
+  transition: background 0.3s ease-in-out;
   width: 190px;
   &:hover {
     background: #0bd8a2;
@@ -88,7 +88,7 @@ const ListItem = styled.li`
   color: white;
   height: 48px;
   position: relative;
-  transition: background-color 0.1s;
+  transition: background-color 0.1s ease-in-out;
   width: 48px;
   &:hover {
     background-color: white;

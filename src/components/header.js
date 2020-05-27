@@ -55,7 +55,7 @@ const MenuItemButton = styled.button`
   border-radius: 0.25rem;
   color: #0bd8a2;
   padding: 0.5rem;
-  transition: background 0.3s;
+  transition: background 0.3s ease-in-out;
   &:hover {
     background: #0bd8a2;
     color: white;
