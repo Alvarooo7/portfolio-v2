@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 import styled from "styled-components"
+import { GoTools } from "react-icons/go"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -210,7 +211,9 @@ const About = ({ location: { pathname } }) => {
                   Firebase Kit for Real time database, auth and cloud functions.
                 </li>
               </ProjectDescription>
-              <ProjectLink disabled>In development</ProjectLink>
+              <ProjectLink disabled>
+                In development <GoTools />{" "}
+              </ProjectLink>
             </Project>
             <Project>
               <ProjectImg>
