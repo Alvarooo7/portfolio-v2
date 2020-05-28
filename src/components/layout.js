@@ -16,11 +16,22 @@ import Footer from "./footer"
 import "./layout.css"
 
 const Container = styled.div`
+  animation: fadeInAnimation ease 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
   width: 100vw;
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `
 
 const Layout = ({ children, location }) => {
