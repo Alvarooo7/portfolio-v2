@@ -1,5 +1,5 @@
 {
-  "name": "dsantiagomj-portfolio",
+  "name": "portfolio-v2",
   "private": true,
   "description": "Portfolio for Dsantiagomj develop on GatsbyJS",
   "version": "0.1.0",
@@ -21,6 +21,7 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -30,6 +31,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
