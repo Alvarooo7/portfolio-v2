@@ -235,7 +235,7 @@ const IndexPage = ({ location: { pathname } }) => {
               <CardIcon>
                 <AiOutlineMobile />
               </CardIcon>
-              <CardTitle>Mobile Developer</CardTitle>
+              <CardTitle>Mobile Development</CardTitle>
               <CardText>
                 I have crossed ways with this path a couple of times. I'm very
                 curious about this path and looking forward to digging into it.
@@ -249,7 +249,7 @@ const IndexPage = ({ location: { pathname } }) => {
               <CardIcon>
                 <GoBrowser />
               </CardIcon>
-              <CardTitle>Frontend Develop</CardTitle>
+              <CardTitle>Frontend Development</CardTitle>
               <CardText>
                 My main path, I've worked mostly as a frontend developer and I'm
                 loving it. I like to bring ideas to life in the browser.
@@ -266,7 +266,7 @@ const IndexPage = ({ location: { pathname } }) => {
               <CardIcon>
                 <BsTerminal />
               </CardIcon>
-              <CardTitle>Backend Developer & Others</CardTitle>
+              <CardTitle>Backend Development & Others</CardTitle>
               <CardText>
                 Technologies that I've learned on my journey. Some of them
                 crucial on my day by day, others looking forward to using again.
