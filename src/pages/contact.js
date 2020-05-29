@@ -7,8 +7,6 @@ import SEO from "../components/seo"
 import avatar from "../images/avatar.svg"
 import hoverAvatar from "../images/hover_avatar.svg"
 
-import "../components/layout.css"
-
 const SectionTitle = styled.h2`
   color: #00343d;
   margin: 0 auto;
