@@ -94,7 +94,6 @@ const Header = () => {
           src={LogoImage}
           alt="DS Logo"
           width="150px"
-          loading="lazy"
         />
       </Link>
       <Menu>

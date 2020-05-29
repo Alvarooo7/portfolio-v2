@@ -209,12 +209,7 @@ const IndexPage = ({ location: { pathname } }) => {
           </Subtitle>
           <Avatar />
           <ImgWrapper>
-            <img
-              src={image}
-              style={{ padding: 0, margin: 0 }}
-              loading="lazy"
-              alt=""
-            />
+            <img src={image} style={{ padding: 0, margin: 0 }} alt="" />
           </ImgWrapper>
         </Wrapper>
       </Container>
