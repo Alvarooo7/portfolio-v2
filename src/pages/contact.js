@@ -123,7 +123,7 @@ const Contact = ({ location: { pathname } }) => {
 
     fetch(request, data)
       .then(response => {
-        window.location.replace("http://localhost:8000/success")
+        window.location.replace("https://dsantiagomj.dev/success")
       })
       .catch(e => console.error(e))
   }
